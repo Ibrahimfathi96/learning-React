@@ -40,7 +40,7 @@ function Home() {
     console.log(counter);
   }
   const reset = () => {
-    setCounter(0)
+    setCounter(0);
     console.log(counter);
   }
   useEffect(() => {
@@ -57,6 +57,7 @@ function Home() {
         <input ref={inputRef} onChange={handleInputChange} />
         <button onClick={clickToFocus}>Click to focus the input</button>
       </div>
+      <h5>income: {income}</h5>
       <button onClick={handleClick}>Click to increment the counter</button>
       <button onClick={reset}>Click to reset the counter</button>
       {/* <div>
